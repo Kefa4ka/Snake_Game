@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра "Змійка"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Гра "Змійка"</h1>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
+    <h2>Очки: <span id="score">0</span> | Найвищий рахунок: <span id="highScore">0</span></h2>
+    <button id="startButton" onclick="startGame()">Запустити гру</button>
+    <div id="gameOver" class="hidden">
+        <div>Гра Закінчена</div>
+        <button id="restartButtonCenter" onclick="restartGame()">Перезапустити гру</button>
+    </div>
+    <div id="controls">
+        <div class="row">
+            <button class="control-button" onclick="move('UP')">▲</button>
+        </div>
+        <div class="row">
+            <button class="control-button" onclick="move('LEFT')">◄</button>
+            <button class="control-button" onclick="move('DOWN')">▼</button>
+            <button class="control-button" onclick="move('RIGHT')">►</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
